@@ -550,7 +550,7 @@ h3 {
 }
 .menu__link {
   display: block;
-  padding: 15px 30px;
+  padding: 10px 30px;
   color: #fafafa;
   font-size: 18px;
   line-height: 30px;
@@ -1097,7 +1097,7 @@ h3 {
   position: relative;
   z-index: 5;
   min-height: 500px;
-  padding-top: 240px;
+  padding-top: 250px;
   color: #f9f9f9;
   text-align: center;
   background-image: url(../img/bg-internal.jpg);
@@ -1114,6 +1114,9 @@ h3 {
   right: 0;
   bottom: 0;
   background-color: rgba(35, 39, 41, 0.7);
+}
+.start h1 {
+  margin-bottom: 30px;
 }
 .breadcrumbs__link {
   position: relative;
@@ -1161,6 +1164,10 @@ h3 {
           align-items: flex-start;
   margin-bottom: 90px;
 }
+.info__team .info__img {
+  margin-top: 5px;
+  max-width: 50%;
+}
 .info__team .info__text {
   width: 50%;
   padding-left: 45px;
@@ -1173,7 +1180,8 @@ h3 {
   color: #666;
 }
 .info__team .info__subtitle {
-  padding-left: 50px;
+  margin-bottom: 15px;
+  padding-left: 55px;
   position: relative;
   color: #999999;
   font-size: 24px;
@@ -1181,7 +1189,7 @@ h3 {
 .info__team .info__subtitle::before {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 5px;
   left: 0;
   width: 28px;
   height: 24px;
@@ -1200,6 +1208,7 @@ h3 {
           align-items: flex-start;
 }
 .info__director .info__img {
+  max-width: 50%;
   margin-left: 45px;
 }
 .info__director .info__text {
@@ -1208,14 +1217,16 @@ h3 {
   text-align: right;
 }
 .info__director .title {
+  margin-bottom: 30px;
   text-align: right;
 }
 .info__director p {
   color: #666;
 }
 .info__director .info__subtitle {
+  margin-bottom: 10px;
   display: inline-block;
-  padding-left: 150px;
+  padding-left: 145px;
   position: relative;
   color: #999999;
   font-size: 24px;
@@ -1223,7 +1234,7 @@ h3 {
 .info__director .info__subtitle::before {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -35px;
   left: 0;
   width: 121px;
   height: 92px;
@@ -1267,6 +1278,9 @@ h3 {
     margin-left: 0;
     text-align: center;
   }
+  .menu__link {
+    border-right: none;
+  }
   .promo {
     min-height: 100vh;
     padding-top: 250px;
@@ -1284,6 +1298,52 @@ h3 {
   .footer {
     padding-top: 10px;
     padding-bottom: 20px;
+  }
+  .header--internal .menu__btn {
+    background-image: url(../img/icon-menu-ham-dark.svg);
+  }
+  .header--internal .menu--opened .menu__btn {
+    background-image: url(../img/icon-menu-cross-dark.svg);
+  }
+  .header--internal .menu__list {
+    background-color: #eae9e9;
+  }
+  .info__director {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .info__director .title {
+    text-align: center;
+  }
+  .info__team {
+    display: block;
+  }
+  .info__team .title {
+    text-align: center;
+  }
+  .info__team .info__img,
+  .info__director .info__img {
+    max-width: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .info__team .info__text,
+  .info__director .info__text {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (max-width: 1022px) {
@@ -1336,6 +1396,10 @@ h3 {
   .service__item {
     width: 48%;
   }
+  .start {
+    padding-top: 180px;
+    min-height: 400px;
+  }
 }
 @media (max-width: 480px) {
   .header {
@@ -1384,5 +1448,19 @@ h3 {
   .contacts__note,
   .footer {
     font-size: 14px;
+  }
+  .info__team .info__subtitle,
+  .info__director .info__subtitle {
+    font-size: 20px;
+  }
+  .info__director .info__subtitle::before {
+    top: -20px;
+  }
+  .info__director .info__text {
+    text-align: left;
+  }
+  .info {
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 }
