@@ -1,0 +1,53 @@
+.about {
+  min-height: 759px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: #f9f9f9;
+  text-align: center;
+  background-image: url(../../img/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  .title {
+    color: #f9f9f9;
+  }
+  
+  p {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  
+  .about__title {
+    font-family: "Istok Web", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: @yellow;
+  }
+}
+
+.about__links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 115px;
+}
+
+.about__link {
+  display: block;
+  padding: 30px 70px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  border-top: 2px solid @yellow;
+  border-bottom: 2px solid @yellow;
+  .transition();
+  
+  &:hover,
+  &:active {
+    .transition();
+    color: @yellow;
+  }
+}
