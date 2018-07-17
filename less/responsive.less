@@ -37,6 +37,9 @@
     margin-left: 0;
     text-align: center;
   }
+  .menu__link {
+    border-right: none;
+  }
   .promo {
     min-height: 100vh;
     padding-top: 250px;
@@ -52,6 +55,47 @@
   .footer {
     padding-top: 10px;
     padding-bottom: 20px;
+  }
+  .header--internal {
+    .menu__btn {
+      background-image: url(../img/icon-menu-ham-dark.svg);
+    }
+    .menu--opened .menu__btn {
+      background-image: url(../img/icon-menu-cross-dark.svg);
+    }
+    .menu__list {
+      background-color: #eae9e9;
+    }
+  }
+  .info__director {
+    flex-direction: column-reverse;
+    
+    .title {
+      text-align: center;
+    }
+  }
+  .info__team {
+    display: block;
+    
+    .title {
+      text-align: center;
+    }
+  }
+  .info__team .info__img,
+  .info__director .info__img {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  .info__team .info__text,
+  .info__director .info__text {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -106,6 +150,10 @@
   .service__item {
     width: 48%;
   }
+  .start {
+    padding-top: 180px;
+    min-height: 400px;
+  }
 }
 
 //----------------------------------------
@@ -155,5 +203,19 @@
   .contacts__note,
   .footer {
     font-size: 14px;
+  }
+  .info__team .info__subtitle,
+  .info__director .info__subtitle {
+    font-size: 20px;
+  }
+  .info__director .info__subtitle::before {
+    top: -20px;
+  }
+  .info__director .info__text {
+    text-align: left;
+  }
+  .info {
+    padding-bottom: 50px;
+    padding-top: 50px;
   }
 }
