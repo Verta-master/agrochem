@@ -1,0 +1,89 @@
+.info {
+  padding-top: 95px;
+  padding-bottom: 125px;
+  background-color: #eae9e9;
+}
+
+.info__team {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 90px;
+    
+  .info__text {
+    width: 50%;
+    padding-left: 45px;
+    padding-right: 30px;
+  }
+  
+  .title {
+    text-align: left;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  .info__subtitle {
+    padding-left: 50px;
+    position: relative;
+    color: #999999;
+    font-size: 24px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 28px;
+      height: 24px;
+      background-image: url(../img/icon-users-yellow.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.info__director {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  .info__img {
+    margin-left: 45px;
+  }
+  
+  .info__text {
+    width: 50%;
+    padding-left: 100px;
+    text-align: right;
+  }
+  
+  .title {
+    text-align: right;
+  }
+  
+  p {
+    color: #666;
+  }
+  
+  .info__subtitle {
+    display: inline-block;
+    padding-left: 150px;
+    position: relative;
+    color: #999999;
+    font-size: 24px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 121px;
+      height: 92px;
+      background-image: url(../img/script.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+

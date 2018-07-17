@@ -1,0 +1,31 @@
+.breadcrumbs__link {
+  position: relative;
+  margin-right: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  .transition();
+  
+  &::after {
+    content: "/";
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    color: #f9f9f9;
+  }
+  
+  &:hover,
+  &:active,
+  &--active {
+    color: @yellow;
+    .transition();
+  }
+  
+  &--active {
+    margin-right: 0;
+  }
+  
+  &--active::after {
+    display: none;
+  }
+}

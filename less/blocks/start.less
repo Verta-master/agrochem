@@ -1,0 +1,27 @@
+.start {
+  position: relative;
+  z-index: 5;
+  min-height: 500px;
+  padding-top: 240px;
+  color: #f9f9f9;
+  text-align: center;
+  background-image: url(../img/bg-internal.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(35, 39, 41, 0.7);
+  }
+}
+
+.start__wrap {
+  
+}
