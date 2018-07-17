@@ -1,0 +1,159 @@
+@media (max-width: 1230px) {
+  .wrapper {
+    width: 100%;
+  }
+  .search__input {
+    max-width: 150px;
+    margin-right: 10px;
+    padding: 0 10px;
+  }
+  .logo {
+    height: 70px;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #232729;
+  }
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icon-menu-ham.svg);
+    background-size: 30px 19px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .menu--opened {
+    .menu__btn {
+      background-image: url(../img/icon-menu-cross.svg);
+      background-size: 20px 20px;
+    }
+  }
+  .menu__item {
+    margin-left: 0;
+    text-align: center;
+  }
+  .promo {
+    min-height: 100vh;
+    padding-top: 250px;
+  }
+  .service__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .service__item {
+    width: 32%;
+    margin-bottom: 20px;
+  }
+  .footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+}
+
+//--------------------------------------
+@media (max-width: 1022px) {
+  .promo {
+    min-height: 700px;
+  }
+  .why__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .why__item {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  .contacts__wrap {
+    display: block;
+  }
+  .contacts__form,
+  .contacts__info {
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacts__btn {
+    float: none;
+  }
+}
+
+//---------------------------------------
+@media (max-width: 766px) {
+  .logo {
+    width: 230px;
+    font-size: 16px;
+  }
+  .menu {
+    margin-right: 20px;
+  }
+  .promo {
+    padding-top: 200px;
+  }
+  .about__links {
+    display: block;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about__link {
+    margin-bottom: 20px;
+  }
+  .service__item {
+    width: 48%;
+  }
+}
+
+//----------------------------------------
+@media (max-width: 480px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 100%;
+    height: 50px;
+  }
+  .search {
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .title,
+  h2,
+  .promo h1,
+  .promo span {
+    font-size: 30px;
+  }
+  .promo__phone {
+    padding-left: 50px;
+    padding-right: 35px;
+    font-size: 24px;
+  }
+  .contacts__form,
+  .contacts__info,
+  .service__item,
+  .why__item {
+    width: 100%;
+  }
+  .about .about__title {
+    font-size: 24px;
+  }
+  .about__link {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .contacts__phones a {
+    display: block;
+  }
+  .contacts__phones::before {
+    top: 10px;
+  }
+  .contacts__note,
+  .footer {
+    font-size: 14px;
+  }
+}
